@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif !important;
+  color: #363237 !important;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 170%;
+  font-family: 'Raleway', sans-serif !important;
+  color: #363237 !important;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header a:hover {
+  text-decoration: underline #EDB83D !important;
+  border-radius: 0px;
+  font-weight: bold;
+  background-color: white !important;
+  color: #363237 !important;
+}
+
+.primary-font {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.header a {
+  color: #363237;
+}
+
+.header {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.sub-title {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.about-section {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.services-section {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#social-media {
+  margin-bottom: 10px;
+}
+
+#email-button {
+  border: 3px solid #EDB83D;
+  color: #EDB83D;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.link-button {
+  color: #EDB83D;
+  text-decoration: none;
+}
+
+.intro-text {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.flash-yellow {
+  color: #EDB83D;
+}
+
+/*TRANSITION*/
+
+router-outlet {
+  display: none;
+}
+
+.routeContainer {
+  position: relative;
+}
+
+.routeContainer > * {
+  display: block;
+}
+
+
+/*MEDIA QUERRYS*/
+
+@media only screen and (max-width: 500px) {
+  .intro-text {
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
