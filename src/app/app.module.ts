@@ -15,7 +15,8 @@ import {routes} from '../routes';
 import { ContactFormComponent } from './component/contact-form/contact-form.component';
 // import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {} from '@angular/animations';
-import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {Ng2PageTransitionModule} from 'ng2-page-transition';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
     HttpModule,
     routes,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    Ng2PageTransitionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

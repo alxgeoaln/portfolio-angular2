@@ -1,9 +1,72 @@
 <div id="contact">
   <div class="text-center">
     <h3>Want to get a project done together?</h3>
-    <button id="email-button" (click)="goToContactForm();" style="margin-top: 10px;" class="btn btn-default btn-lg">Send me a email
+    <button id="email-button" style="margin-top: 10px;" data-toggle="modal" data-target="#exampleModalLong"
+            class="btn btn-default btn-lg">Send me a email
     </button>
+    <!--(click)="goToContactForm();"-->
   </div>
 
 </div>
 <hr/>
+<div class="modal fade modal-fullscreen" id="exampleModalLong" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 text-center ">
+            <img src="../../../assets/logo/contact-form-logo.svg" class="logo-contact-form" alt="logo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 style="color: #fff !important;">Few questions about yourself</h2>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+          <div class="col-md-6">
+            <input type="text" placeholder="Name*"
+                   class="form-control input-contact-form pull-right-input-contact-form">
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Email address*" class="form-control input-contact-form">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" placeholder="Phone number"
+                   class="form-control input-contact-form pull-right-input-contact-form">
+          </div>
+          <div class="col-md-6">
+            <input type="text" placeholder="Website/Company" class="form-control input-contact-form">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <textarea class="form-control textarea-contact-form"
+                      placeholder="Tell me about your project, what is it? How can I help?*" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="row text-center">
+          <button style="margin-top: 30px; border: 3px solid #EDB83D;
+                        color: #EDB83D;
+                          font-family: 'Raleway', sans-serif !important; background-color: #363237;"
+                  class="btn btn-default btn-lg">Submit your project
+          </button>
+          <br>
+          <small style="color: #fff !important; font-weight: bold;">* Required</small>
+        </div>
+        <p style="color: #fff !important;
+                  font-weight: bold;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  margin-top: 50px;
+                  margin-right: 30px;">
+          <i class="fa fa-times" aria-hidden="true" style="font-size: 35px; cursor: pointer;" data-dismiss="modal"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

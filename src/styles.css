@@ -15,6 +15,22 @@ body {
   padding-bottom: 20px;
 }
 
+input.transparent-input {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}
+
+
+input:focus, textarea:focus {outline: none;}
+.body-border {
+  border: 8px solid #363237;
+}
+
+.body-border-fixed {
+  border-top: 8px solid #363237;
+  position: fixed;
+}
+
 .header a:hover {
   text-decoration: underline #EDB83D !important;
   border-radius: 0px;
@@ -92,14 +108,13 @@ router-outlet {
   display: none;
 }
 
-.routeContainer {
+.route-container {
   position: relative;
 }
 
-.routeContainer > * {
+.route-container > * {
   display: block;
 }
-
 
 /*MEDIA QUERRYS*/
 
