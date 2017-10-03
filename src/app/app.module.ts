@@ -13,10 +13,13 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MainComponent } from './component/main/main.component';
 import {routes} from '../routes';
 import { ContactFormComponent } from './component/contact-form/contact-form.component';
-// import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {} from '@angular/animations';
-import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {Ng2PageTransitionModule} from 'ng2-page-transition';
+import { SmoothScrollToDirective, SmoothScrollDirective } from 'ng2-smooth-scroll';
+import {ValidateService} from './services/validate.service';
+import {EmailService} from './services/email.service';
+import {ToastrService} from './services/toastr.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,18 +30,17 @@ import {Ng2PageTransitionModule} from 'ng2-page-transition';
     ServicesComponent,
     FooterComponent,
     MainComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SmoothScrollToDirective,
+    SmoothScrollDirective,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes,
-    BrowserAnimationsModule,
-    NoopAnimationsModule,
-    Ng2PageTransitionModule
+    routes
   ],
-  providers: [],
+  providers: [ValidateService, EmailService, ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
