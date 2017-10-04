@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {ValidateService} from '../../services/validate.service';
 import {ToastrService} from '../../services/toastr.service';
+import {EmailService} from '../../services/email.service';
+import {isNullOrUndefined} from "util";
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +17,7 @@ export class ContactComponent implements OnInit {
   website: string;
   projectInfo: string;
 
-  constructor(private validateService: ValidateService, private toastr: ToastrService) {
+  constructor(private validateService: ValidateService, private toastr: ToastrService, private emailService: EmailService) {
   }
 
   ngOnInit() {
@@ -26,7 +28,7 @@ export class ContactComponent implements OnInit {
       name: this.name,
       email: this.email,
       phoneNumber: this.phoneNumber,
-      website: this.website,
+      website: isNullOrUndefined(this.website) ? 'Portofolio' : this.website,
       projectInfo: this.projectInfo
     };
 
@@ -40,7 +42,15 @@ export class ContactComponent implements OnInit {
       return false;
     }
 
+    this.emailService.sendEmail(contactInfo).subscribe(data => {
+      this.name = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.website = null;
+      this.projectInfo = null;
 
+      this.toastr.success('Email sent');
+    });
   }
 
 }
