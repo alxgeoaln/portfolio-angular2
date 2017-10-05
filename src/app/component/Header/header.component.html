@@ -1,9 +1,11 @@
-<div id="navigation" class="header clearfix" *ngIf="!navIsFixed">
+<div id="navigation" class="header clearfix">
   <nav>
     <ul class="nav nav-pills pull-right">
-      <li class="nav-button"><a href="#" scrollTo="intro-section">Home</a></li>
-      <li class="nav-button"><a href="#" [offset]="80" scrollTo="projects">Projects</a></li>
-      <li class="nav-button"><a href="#" scrollTo="contact">Contact</a></li>
+      <!--<li class="nav-button"><a href="#" [offset]="80" scrollTo="projects">Projects</a></li>-->
+      <!--<li class="nav-button"><a href="#" scrollTo="contact">Contact</a></li>-->
+
+      <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000"  href="#projects" >Projects</a></li>
+      <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#contact">Contact</a></li>
 
     </ul>
   </nav>
@@ -12,7 +14,7 @@
 <hr/>
 
 
-<nav class="navbar navbar-default navbar-fixed-top" *ngIf="navIsFixed" (show)="navIsFixed" style="margin-left: 8px; margin-right: 8px; border-top: 8px solid;">
+<nav class="navbar navbar-default navbar-fixed-top" *ngIf="navIsFixed" style="margin-left: 8px; margin-right: 8px; border-top: 8px solid;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -25,9 +27,9 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav-button"><a href="#">Home</a></li>
-        <li class="nav-button"><a href="#projects">Projects</a></li>
-        <li class="nav-button"><a href="#contact">Contact</a></li>
+        <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#intro-section">Home</a></li>
+        <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#projects">Projects</a></li>
+        <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#contact">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

@@ -18,6 +18,7 @@ import { SmoothScrollToDirective, SmoothScrollDirective } from 'ng2-smooth-scrol
 import {ValidateService} from './services/validate.service';
 import {EmailService} from './services/email.service';
 import {ToastrService} from './services/toastr.service';
+import {Ng2PageScrollModule} from "ng2-page-scroll";
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import {ToastrService} from './services/toastr.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    Ng2PageScrollModule,
     routes
   ],
   providers: [ValidateService, EmailService, ToastrService],
