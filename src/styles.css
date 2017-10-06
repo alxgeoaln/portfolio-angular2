@@ -31,7 +31,7 @@ input:focus, textarea:focus {outline: none;}
   position: fixed;
 }
 
-.header a:hover {
+.nav-button a:hover {
   text-decoration: underline #EDB83D !important;
   border-radius: 0px;
   font-weight: bold;
@@ -121,7 +121,7 @@ router-outlet {
 @media only screen and (max-width: 500px) {
   .intro-text {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .title {

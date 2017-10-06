@@ -21,7 +21,6 @@ export class HeaderComponent implements OnInit, OnChanges {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log(number)
     if (number >= 100) {
       this.navIsFixed = true;
     } else if (this.navIsFixed && number < 21) {
