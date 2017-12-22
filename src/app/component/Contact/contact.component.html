@@ -1,15 +1,14 @@
 <div id="contact">
   <div class="text-center">
     <h3>Want to get a project done together?</h3>
-    <button id="email-button" style="margin-top: 10px;" data-toggle="modal" data-target="#exampleModalLong"
-            class="btn btn-default btn-lg">Send me a email
+    <button id="email-button" style="margin-top: 10px;" data-toggle="modal" data-target="#exampleModalLong" class="btn btn-default btn-lg">Send me a email
     </button>
   </div>
 
 </div>
 <hr/>
-<div class="modal fade modal-fullscreen" id="exampleModalLong" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade modal-fullscreen" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+  aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -25,33 +24,28 @@
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="col-md-6">
-            <input type="text" placeholder="Name*" name="name" [(ngModel)]="name"
-                   class="form-control input-contact-form pull-right-input-contact-form">
+            <input type="text" placeholder="Name*" name="name" [(ngModel)]="name" class="form-control input-contact-form pull-right-input-contact-form">
           </div>
           <div class="col-md-6">
-            <input type="email" placeholder="Email address*"  name="email" [(ngModel)]="email"
-                   class="form-control input-contact-form">
+            <input type="email" placeholder="Email address*" name="email" [(ngModel)]="email" class="form-control input-contact-form">
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <input type="text" placeholder="Phone number" name="phoneNumber" [(ngModel)]="phoneNumber"
-                   class="form-control input-contact-form pull-right-input-contact-form">
+            <input type="text" placeholder="Phone number" name="phoneNumber" [(ngModel)]="phoneNumber" class="form-control input-contact-form pull-right-input-contact-form">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Website/Company" name="website" [(ngModel)]="website"
-                   class="form-control input-contact-form">
+            <input type="text" placeholder="Website/Company" name="website" [(ngModel)]="website" class="form-control input-contact-form">
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <textarea class="form-control textarea-contact-form" name="projectInfo" [(ngModel)]="projectInfo"
-                      placeholder="Tell me about your project, what is it? How can I help?*" rows="3" required></textarea>
+            <textarea class="form-control textarea-contact-form" name="projectInfo" [(ngModel)]="projectInfo" placeholder="Tell me about your project, what is it? How can I help?*"
+              rows="3" required></textarea>
           </div>
         </div>
         <div class="row text-center">
-          <button (click)="sendEmail();"
-                  class="btn btn-default btn-lg send-email-button">Submit your project
+          <button (click)="sendEmail();" type="submit" class="btn btn-default btn-lg send-email-button">Submit your project
           </button>
           <br>
           <small style="color: #fff !important; font-weight: bold;">* Required</small>
@@ -69,3 +63,5 @@
     </div>
   </div>
 </div>
+
+

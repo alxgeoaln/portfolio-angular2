@@ -5,8 +5,8 @@ import {ContactFormComponent} from './app/component/contact-form/contact-form.co
 
 
 export const router: Routes = [
-  {path: '', redirectTo: 'main', pathMatch: 'full'},
-  {path: 'main', component: MainComponent},
+  {path: '', redirectTo: '', pathMatch: 'full'},
+  {path: '', component: MainComponent},
   {path: 'contact-form', component: ContactFormComponent},
   {path: '**', component: MainComponent},
 ];
