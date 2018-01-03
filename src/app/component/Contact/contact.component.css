@@ -39,12 +39,36 @@
   opacity: 1;
 }
 
+#email-button {
+  border: 3px solid #EDB83D;
+  color: #EDB83D;
+  font-family: 'Raleway', sans-serif !important;
+  transition: all 0.5s ease-out;
+}
+
+#email-button:hover {
+  padding: 10px 27px;
+  border-radius: 20px;
+  background-color: #EDB83D;
+  color: #363237;
+  font-weight: bolder;
+}
+
 .send-email-button {
   margin-top: 30px;
   border: 3px solid #EDB83D;
   color: #EDB83D;
   font-family: 'Raleway', sans-serif !important;
   background-color: #363237;
+  transition: all 0.5s ease-out;
+}
+
+.send-email-button:hover{
+  padding: 10px 27px;
+  border-radius: 20px;
+  background-color: #EDB83D;
+  color: #363237;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 500px) {

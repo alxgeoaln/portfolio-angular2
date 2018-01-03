@@ -24,6 +24,9 @@ input.transparent-input {
 
 
 input:focus, textarea:focus {outline: none;}
+.btn:focus{
+  outline: none !important;
+}
 
 .body-border {
   border: 8px solid #363237;
@@ -86,11 +89,6 @@ input:focus, textarea:focus {outline: none;}
   margin-bottom: 10px;
 }
 
-#email-button {
-  border: 3px solid #EDB83D;
-  color: #EDB83D;
-  font-family: 'Raleway', sans-serif !important;
-}
 
 .link-button {
   color: #EDB83D;

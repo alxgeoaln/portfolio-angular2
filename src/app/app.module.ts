@@ -12,7 +12,6 @@ import { ServicesComponent } from './component/services/services.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MainComponent } from './component/main/main.component';
 import {routes} from '../routes';
-import { ContactFormComponent } from './component/contact-form/contact-form.component';
 import {} from '@angular/animations';
 import { SmoothScrollToDirective, SmoothScrollDirective } from 'ng2-smooth-scroll';
 import {ValidateService} from './services/validate.service';
@@ -31,7 +30,6 @@ import {Ng2PageScrollModule} from "ng2-page-scroll";
     ServicesComponent,
     FooterComponent,
     MainComponent,
-    ContactFormComponent,
     SmoothScrollToDirective,
     SmoothScrollDirective,
   ],
