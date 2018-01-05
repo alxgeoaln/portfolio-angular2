@@ -1,16 +1,22 @@
 <div id="navigation" class="header clearfix">
   <nav>
     <ul class="nav nav-pills pull-right">
-      <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000"  href="#projects" >Projects</a></li>
-      <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#contact">Contact</a></li>
+      <li class="nav-button">
+        <a pageScroll [pageScrollSpeed]="4000" href="#projects">Projects</a>
+      </li>
+      <li class="nav-button">
+        <a pageScroll [pageScrollSpeed]="4000" href="#contact">Contact</a>
+      </li>
     </ul>
   </nav>
-  <img class="my-logo" src="../../../assets/logo/Portfolio%20logo.svg" alt="logo">
+  <a href="/">
+    <img class="my-logo" src="../../../assets/logo/Portfolio%20logo.svg" alt="logo">
+  </a>
 </div>
 <hr/>
 
 
-<nav class="navbar navbar-default navbar-fixed-top" *ngIf="navIsFixed" style="margin-left: 8px; margin-right: 8px; border-top: 8px solid;">
+<!-- <nav class="navbar navbar-default navbar-fixed-top" *ngIf="navIsFixed" style="margin-left: 8px; margin-right: 8px; border-top: 8px solid;">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,5 +34,5 @@
         <li class="nav-button"><a pageScroll [pageScrollSpeed]="4000" href="#contact">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->
-  </div>
-</nav>
+<!-- </div> -->
+<!-- </nav>  -->

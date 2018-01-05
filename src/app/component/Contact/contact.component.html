@@ -22,26 +22,28 @@
             <h2 style="color: #fff !important;">Few questions about yourself</h2>
           </div>
         </div>
-        <div class="row" style="margin-top: 10px;">
-          <div class="col-md-6">
-            <input type="text" placeholder="Name*" name="name" [(ngModel)]="name" class="form-control input-contact-form pull-right-input-contact-form">
+        <div class="input-container">
+          <div class="row" style="margin-top: 10px;">
+            <div class="col-md-6">
+              <input type="text" placeholder="Name*" name="name" [(ngModel)]="name" class="form-control input-contact-form">
+            </div>
+            <div class="col-md-6">
+              <input type="email" placeholder="Email address*" name="email" [(ngModel)]="email" class="form-control input-contact-form">
+            </div>
           </div>
-          <div class="col-md-6">
-            <input type="email" placeholder="Email address*" name="email" [(ngModel)]="email" class="form-control input-contact-form">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" placeholder="Phone number" name="phoneNumber" [(ngModel)]="phoneNumber" class="form-control input-contact-form">
+            </div>
+            <div class="col-md-6">
+              <input type="text" placeholder="Website/Company" name="website" [(ngModel)]="website" class="form-control input-contact-form">
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" placeholder="Phone number" name="phoneNumber" [(ngModel)]="phoneNumber" class="form-control input-contact-form pull-right-input-contact-form">
-          </div>
-          <div class="col-md-6">
-            <input type="text" placeholder="Website/Company" name="website" [(ngModel)]="website" class="form-control input-contact-form">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <textarea class="form-control textarea-contact-form" name="projectInfo" [(ngModel)]="projectInfo" placeholder="Tell me about your project, what is it? How can I help?*"
-              rows="3" required></textarea>
+          <div class="row">
+            <div class="col-md-12">
+              <textarea class="form-control textarea-contact-form" name="projectInfo" [(ngModel)]="projectInfo" placeholder="Tell me about your project, what is it? How can I help?*"
+                rows="3" required></textarea>
+            </div>
           </div>
         </div>
         <div class="row text-center">
@@ -63,5 +65,3 @@
     </div>
   </div>
 </div>
-
-
